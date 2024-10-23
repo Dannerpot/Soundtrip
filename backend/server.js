@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   res.send('Music Recommendation API is running');
 });
 app.use(cors({
-  origin: 'http://localhost:3000'  // Allow your frontend
+  origin: 'soundtrip.vercel.app'  // Allow your frontend
 }));
 app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
 
