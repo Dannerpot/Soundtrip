@@ -1,9 +1,10 @@
 const axios = require('axios');
 const qs = require('querystring');
+require('dotenv').config();
 
 // Spotify App Credentials
-const CLIENT_ID = '340d9fde9c2747acb7a1a960d805dbcd';  // Your Client ID
-const CLIENT_SECRET = 'dc321c4e01ee4609a358e16636828a1a'; // Your Client Secret
+const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const AUTH_URL = 'https://accounts.spotify.com/api/token';
 
 // Function to get the Spotify API access token using Client Credentials Flow
