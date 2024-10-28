@@ -1,0 +1,10 @@
+{
+    "name": "soundtrip",
+    "version": "1.0.0",
+    "scripts": {
+      "frontend": "cd frontend && npm run build",
+      "backend": "cd backend && node server.js"
+    },
+    "dependencies": {}
+  }
+  
