@@ -38,7 +38,7 @@ const App = () => {
         recommendations.length > 0 && (
           <div className='results'>
             <h2>Recommendations:</h2>
-            <ul className='List'>
+            <ul className='list'>
               {recommendations.map((song, index) => (
                 <li key={index}>{song}</li>
               ))}
