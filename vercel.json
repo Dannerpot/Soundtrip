@@ -11,14 +11,9 @@
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/backend/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/frontend/build/$1"
-      }
+      { "src": "/recommend", "dest": "/backend/server.js" },
+      { "src": "/search", "dest": "/backend/server.js" },
+      { "src": "/(.*)", "dest": "/frontend/$1" }
     ]
   }
   
